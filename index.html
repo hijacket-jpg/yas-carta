@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yas_carta</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fuente suave y legible -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ELEMENTO DE AUDIO: Coloca el nombre de tu archivo de música en el src, ej: src="cancion.mp3" -->
+    <audio id="bg-music" src="Roi - Videoclub (Instrumental ｜｜ Best part only).mp3" loop preload="auto"></audio>
+
+    <!-- PANTALLA INICIAL: Botón central -->
+    <div id="start-screen" class="start-screen">
+        <button id="start-btn" class="btn-tocame">tócame pe</button>
+    </div>
+
+    <!-- CONTENIDO PRINCIPAL (Oculto al inicio) -->
+    <main id="main-content" class="main-content hidden">
+
+        <!-- 4 IMÁGENES FLOTANTES ALREDEDOR: Coloca tus imágenes en cada src -->
+        <div class="floating-images-container">
+            <img src="pngwing.com (6).png" alt="Recuerdo 1" class="floating-img float-1" id="float-1">
+            <img src="pngwing.com (7).png" alt="Recuerdo 2" class="floating-img float-2" id="float-2">
+            <img src="pngwing.com (8).png" alt="Recuerdo 3" class="floating-img float-3" id="float-3">
+            <img src="pngwing.com (9).png" alt="Recuerdo 4" class="floating-img float-4" id="float-4">
+        </div>
+
+        <!-- CONTENEDOR CENTRAL: 3 TARJETAS CON EFECTO DE VOLTEO -->
+        <div class="cards-wrapper">
+            <h2 class="sub-title">Toca para darles vuelta</h2>
+
+            <div class="cards-grid">
+
+                <!-- TARJETA 1 -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Frente (Imagen) -->
+                        <div class="flip-card-front">
+                            <!-- Pon tu imagen aquí, ej: src="foto1.jpg" -->
+                            <img src="pizza.jpeg" alt="Foto 1" class="card-img">
+                            <span class="card-instruction">enfermere</span>
+                        </div>
+                        <!-- Atrás (Mensaje 1) -->
+                        <div class="flip-card-back">
+                            <p>Quiero que sepas lo mucho que te quiero, lindota y princesita hermosa.
+                                Para mí eres alguien muy especial y de una u otra forma siempre quiero recordártelo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TARJETA 2 -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Frente (Imagen) -->
+                        <div class="flip-card-front">
+                            <!-- Pon tu imagen aquí, ej: src="foto2.jpg" -->
+                            <img src="brocoli.jpeg" alt="Foto 2" class="card-img">
+                            <span class="card-instruction">potone</span>
+                        </div>
+                        <!-- Atrás (Mensaje 2) -->
+                        <div class="flip-card-back">
+                            <p>También quiero decirte que estoy seguro de que serás una gran enfermera. 
+                                Tienes la dedicación, la fuerza y el corazón que se necesitan para cuidar de los 
+                                demás, y sé que lograrás tus metas con todo el esfuerzo que estás poniendo
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TARJETA 3 -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Frente (Imagen) -->
+                        <div class="flip-card-front">
+                            <!-- Pon tu imagen aquí, ej: src="foto3.jpg" -->
+                            <img src="panzona.jpeg" alt="Foto 3" class="card-img">
+                            <span class="card-instruction">wazawaza</span>
+                        </div>
+                        <!-- Atrás (Mensaje 3) -->
+                        <div class="flip-card-back">
+                            <p>Por último, cuídate mucho, porque tu bienestar es lo más importante. 
+                                Recuerda que puedes con todo lo que se te presente, incluso en los 
+                                momentos difíciles. Yo confío en ti y siempre voy a estar aquí para apoyarte</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
